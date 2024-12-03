@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import { FaBars, FaTimes } from "react-icons/fa";
 import { HiMenuAlt2, HiOutlineX } from "react-icons/hi";
+import logo from "../assets/cty.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,18 +30,22 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-primary text-white shadow-lg"
-          : "bg-transparent text-white"
+          ? "bg-emerald-800 text-white shadow-lg"
+          : "bg-primary text-white"
       }`}
+      style={{ "--navbar-height": "64px" }}
     >
       <nav className="container mx-auto flex justify-between items-center px-4 py-3 md:py-4">
-        {/* Logo */}
         <div>
           <Link
             to="/"
-            className="text-2xl font-bold hover:text-primary-dark transition"
+            className="text-2xl font-bold hover:text-emerald-200 transition"
           >
-            BMI-CTY
+            <img
+              src={logo}
+              alt="CTY Logo"
+              className="w-20 h-20 object-contain"
+            />
           </Link>
         </div>
 
@@ -56,12 +60,12 @@ const Navbar = () => {
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex space-x-6">
-          {["Home", "Courses", "Mentorship", "About Us", "Contact"].map(
+          {["Home", "Courses", "Mentorship", "About", "Contact"].map(
             (item, index) => (
               <li key={index} className="relative group">
                 <Link
                   to={`/${item.toLowerCase().replace(/\s/g, "")}`}
-                  className="text-lg hover:text-primary-light transition"
+                  className="text-lg hover:text-emerald-200 transition"
                 >
                   {item}
                 </Link>
@@ -74,7 +78,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <ul
-          className={`fixed top-16 left-0 w-full bg-primary text-white flex flex-col items-center space-y-6 py-4 transition-transform duration-300 md:hidden ${
+          className={`fixed top-16 left-0 w-full bg-green-500 text-white flex flex-col items-center space-y-6 py-4 transition-transform duration-300 md:hidden ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -83,7 +87,7 @@ const Navbar = () => {
               <li key={index}>
                 <Link
                   to={`/${item.toLowerCase().replace(/\s/g, "")}`}
-                  className="text-lg hover:text-primary-light transition"
+                  className="text-lg hover:text-emerald-200 transition"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item}
@@ -98,49 +102,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import { FaGraduationCap } from "react-icons/fa";
-
-// const Navbar = () => {
-//   return (
-//     <nav className="bg-primary text-white p-4">
-//       <div className="container mx-auto flex justify-between items-center">
-//         <div className="flex items-center">
-//           <FaGraduationCap className="text-2xl mr-2" />
-//           <h1 className="text-lg font-bold">BMI-CTY Academy</h1>
-//         </div>
-//         <ul className="flex space-x-6">
-//           <li>
-//             <Link to="/" className="hover:text-gray-200">
-//               Home
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/courses" className="hover:text-gray-200">
-//               Courses
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/mentorship" className="hover:text-gray-200">
-//               Mentorship
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/about" className="hover:text-gray-200">
-//               About
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/contact" className="hover:text-gray-200">
-//               Contact
-//             </Link>
-//           </li>
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
