@@ -23,7 +23,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="py-10 bg-green-100">
+    <div className="py-10 bg-[#f3f4f6]">
       <div className="container mx-auto">
         <h2 className="text-center text-2xl font-bold mb-6 text-green-800">
           Features
@@ -39,10 +39,10 @@ const Features = () => {
                 alt={feature.title}
                 className="rounded mb-4"
               />
-              <h3 className="text-xl font-semibold text-green-700">
+              <h3 className="text-xl font-semibold text-emerald-800">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-green-600">{feature.description}</p>
+              <p className="mt-2 text-emerald-800">{feature.description}</p>
             </div>
           ))}
         </div>
