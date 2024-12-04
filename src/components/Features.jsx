@@ -26,7 +26,7 @@ const Features = () => {
     <div className="py-10 bg-green-100">
       <div className="container mx-auto">
         <h2 className="text-center text-2xl font-bold mb-6 text-green-800">
-          Why Choose Us?
+          Features
         </h2>
         <div className="flex flex-wrap justify-center gap-8">
           {features.map((feature, index) => (
@@ -52,43 +52,3 @@ const Features = () => {
 };
 
 export default Features;
-
-// import React from "react";
-// import { FaLightbulb, FaUsers, FaChalkboardTeacher } from "react-icons/fa";
-
-// const Features = () => {
-//   const features = [
-//     {
-//       icon: <FaLightbulb />,
-//       title: "Innovative Curriculum",
-//       description: "Curated content for ages 7–14.",
-//     },
-//     {
-//       icon: <FaUsers />,
-//       title: "Community Building",
-//       description: "Networking with peers and mentors.",
-//     },
-//     {
-//       icon: <FaChalkboardTeacher />,
-//       title: "Experienced Instructors",
-//       description: "Learn from seasoned experts.",
-//     },
-//   ];
-
-//   return (
-//     <div className="container mx-auto py-10">
-//       <h2 className="text-center text-2xl font-bold mb-6">Why Choose Us?</h2>
-//       <div className="flex justify-around">
-//         {features.map((feature, index) => (
-//           <div key={index} className="text-center max-w-sm">
-//             <div className="text-4xl text-primary mb-4">{feature.icon}</div>
-//             <h3 className="text-xl font-semibold">{feature.title}</h3>
-//             <p className="mt-2">{feature.description}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Features;

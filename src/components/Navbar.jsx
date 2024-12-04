@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HiMenuAlt2, HiOutlineX } from "react-icons/hi";
-import logo from "../assets/cty.png";
+import logo from "../assets/mobile-logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +31,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-emerald-800 text-white shadow-lg"
-          : "bg-primary text-white"
+          : "bg-white-800 text-emerald-800"
       }`}
       style={{ "--navbar-height": "64px" }}
     >
@@ -60,41 +60,42 @@ const Navbar = () => {
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex space-x-6">
-          {["Home", "Courses", "Mentorship", "About", "Contact"].map(
-            (item, index) => (
-              <li key={index} className="relative group">
-                <Link
-                  to={`/${item.toLowerCase().replace(/\s/g, "")}`}
-                  className="text-lg hover:text-emerald-200 transition"
-                >
-                  {item}
-                </Link>
-                {/* Underline Animation */}
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
-              </li>
-            )
-          )}
+          {["Home", "Mentorship", "About", "Contact"].map((item, index) => (
+            <li key={index} className="relative group">
+              <Link
+                to={`/${item.toLowerCase().replace(/\s/g, "")}`}
+                className="text-lg hover:text-emerald-200 transition"
+              >
+                {item}
+              </Link>
+              {/* Underline Animation */}
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-emerald-800 transition-all duration-300 group-hover:w-full"></span>
+            </li>
+          ))}
         </ul>
 
         {/* Mobile Menu */}
+
         <ul
-          className={`fixed top-16 left-0 w-full bg-green-500 text-white flex flex-col items-center space-y-6 py-4 transition-transform duration-300 md:hidden ${
+          className={`fixed top-16 left-0 w-full bg-[#f3f4f6] text-black flex flex-col items-center space-y-6 py-4 transition-transform duration-300 md:hidden ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          {["Home", "Courses", "Mentorship", "About Us", "Contact"].map(
-            (item, index) => (
-              <li key={index}>
-                <Link
-                  to={`/${item.toLowerCase().replace(/\s/g, "")}`}
-                  className="text-lg hover:text-emerald-200 transition"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item}
-                </Link>
-              </li>
-            )
-          )}
+          {["Home", "Mentorship", "About", "Contact"].map((item, index) => (
+            <li key={index} className="w-full">
+              <Link
+                to={`/${item.toLowerCase().replace(/\s/g, "")}`}
+                className="text-lg hover:text-emerald-800 transition block py-3"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item}
+              </Link>
+              {index < 4 && (
+                <div className="border-b border-gray-300 w-full"></div>
+              )}
+              {/* Add border for all except last item */}
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
