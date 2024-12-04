@@ -20,11 +20,11 @@ const Footer = () => {
                 Home
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="/courses" className="hover:underline">
                 Courses
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="/mentorship" className="hover:underline">
                 Mentorship
