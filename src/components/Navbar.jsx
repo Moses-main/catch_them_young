@@ -75,14 +75,13 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Menu */}
-
         <ul
-          className={`fixed top-16 left-0 w-full bg-[#f3f4f6] text-black flex flex-col items-center space-y-6 py-4 transition-transform duration-300 md:hidden ${
+          className={`fixed top-16 left-0 w-full bg-[#f3f4f6] text-black flex flex-col items-center justify-center space-y-6 py-4 transition-transform duration-300 md:hidden ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           {["Home", "Mentorship", "About", "Contact"].map((item, index) => (
-            <li key={index} className="w-full">
+            <li key={index} className="w-full text-center">
               <Link
                 to={`/${item.toLowerCase().replace(/\s/g, "")}`}
                 className="text-lg hover:text-emerald-800 transition block py-3"
@@ -90,7 +89,7 @@ const Navbar = () => {
               >
                 {item}
               </Link>
-              {index < 4 && (
+              {index < 3 && (
                 <div className="border-b border-gray-300 w-full"></div>
               )}
               {/* Add border for all except last item */}
