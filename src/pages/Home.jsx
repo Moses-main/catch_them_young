@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/Hero";
+// import Hero from "../components/Hero";
 import Features from "../components/Features";
 import MillionaireCohort from "../components/MillionaireCohort";
 import CourseHighlights from "../components/CourseHighlights";
@@ -14,7 +14,7 @@ import Subscribe from "../components/Subscribe";
 const Home = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
       {/* <MissionSection /> */}
       <Welcome />
       <WhyChooseUs />

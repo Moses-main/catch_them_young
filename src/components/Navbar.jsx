@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HiMenuAlt2, HiOutlineX } from "react-icons/hi";
-import logo from "../assets/mobile-logo.png";
+import logo from "../assets/bmi_logo1.png";
+import colorLogo from "../assets/bmi_logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 pb-200 transition-all duration-300 ${
         isScrolled
           ? "bg-emerald-800 text-white shadow-lg"
           : "bg-white-800 text-emerald-800"
@@ -42,7 +43,7 @@ const Navbar = () => {
             className="text-2xl font-bold hover:text-emerald-200 transition"
           >
             <img
-              src={logo}
+              src={isScrolled ? logo : colorLogo}
               alt="CTY Logo"
               className="w-20 h-20 object-contain"
             />
