@@ -31,7 +31,7 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 pb-200 transition-all duration-300 border-b ${
         isScrolled
-          ? "bg-emerald-800 text-white shadow-lg font-bold"
+          ? "bg-gradient-to-r from-emerald-800 to-yellow-600 text-white shadow-lg font-bold"
           : "bg-white-800 text-emerald-800 font-bold"
       }`}
       style={{ "--navbar-height": "64px" }}
@@ -70,7 +70,7 @@ const Navbar = () => {
                 {item}
               </Link>
               {/* Underline Animation */}
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-emerald-800 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </li>
           ))}
         </ul>
