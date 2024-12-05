@@ -29,10 +29,10 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 pb-200 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 pb-200 transition-all duration-300 border-b ${
         isScrolled
-          ? "bg-emerald-800 text-white shadow-lg"
-          : "bg-white-800 text-emerald-800"
+          ? "bg-emerald-800 text-white shadow-lg font-bold"
+          : "bg-white-800 text-emerald-800 font-bold"
       }`}
       style={{ "--navbar-height": "64px" }}
     >
@@ -77,7 +77,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <ul
-          className={`fixed top-16 left-0 w-full bg-[#f3f4f6] text-black flex flex-col items-center justify-center space-y-6 py-4 transition-transform duration-300 md:hidden ${
+          className={`fixed top-20 left-0 w-full bg-[#f3f4f6] text-black flex flex-col items-center justify-center space-y-6 py-4 transition-transform duration-300 md:hidden ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >

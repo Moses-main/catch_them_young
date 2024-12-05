@@ -1,10 +1,10 @@
 import React from "react";
-import {
-  FaChalkboardTeacher,
-  FaUsers,
-  FaHandsHelping,
-  FaRocket,
-} from "react-icons/fa";
+// import {
+//   FaChalkboardTeacher,
+//   FaUsers,
+//   FaHandsHelping,
+//   FaRocket,
+// } from "react-icons/fa";
 import Lottie from "lottie-react";
 import mentorshipAnimation from "../animations/mentorship.json"; // Replace with the path to your Lottie animation
 import howItWorksAnimation from "../animations/how-it-works.json"; // Replace with the path
@@ -16,7 +16,7 @@ const Mentorship = () => {
     <div className="container mx-auto py-12 px-6 bg-[#f9f5f0]">
       {" "}
       {/* Carton color background */}
-      <h1 className="text-4xl font-extrabold text-center mb-8 text-emerald-700">
+      <h1 className="text-3xl font-extrabold text-center mb-8 text-emerald-700">
         Welcome to BMI-CTY Mentorship Program
       </h1>
       {/* Introduction Section */}
