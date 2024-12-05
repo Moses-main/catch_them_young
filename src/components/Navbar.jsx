@@ -37,7 +37,7 @@ const Navbar = () => {
       style={{ "--navbar-height": "64px" }}
     >
       <nav className="container mx-auto flex justify-between items-center px-4 py-3 md:py-4">
-        <div>
+        <div className="flex items-center space-x-4">
           <Link
             to="/"
             className="text-2xl font-bold hover:text-emerald-200 transition"
@@ -48,6 +48,16 @@ const Navbar = () => {
               className="w-20 h-20 object-contain"
             />
           </Link>
+          <div
+            className={`flex flex-col ${
+              isScrolled ? "text-white" : "text-emerald-800"
+            } transition-colors`}
+          >
+            <span className="text-xl font-bold uppercase">BMI</span>
+            <span className="text-sm font-bold uppercase">
+              FINISHING SCHOOL
+            </span>
+          </div>
         </div>
 
         {/* Hamburger Icon for Mobile */}

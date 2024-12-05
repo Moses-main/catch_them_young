@@ -20,7 +20,7 @@ const courses = [
 
 const CourseHighlights = () => {
   return (
-    <section className="py-16" style={{ backgroundColor: "#f3f4f6" }}>
+    <section className="py-16" style={{ backgroundColor: "#fdf1e1" }}>
       <div className="container mx-auto">
         <h2 className="text-center text-4xl font-bold mb-8 text-gray-800 animate-fadeInUp">
           Course Highlights

@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
           initial="hidden"
           animate="visible"
           className="p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
-          style={{ backgroundColor: "#dff5e5" }}
+          style={{ backgroundColor: "white" }}
         >
           <FaRocket className="text-4xl mb-4" style={{ color: "#23A455" }} />
           <h3 className="text-2xl font-semibold mb-2">Early Development</h3>
@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
           initial="hidden"
           animate="visible"
           className="p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
-          style={{ backgroundColor: "#dff5e5" }}
+          style={{ backgroundColor: "white" }}
         >
           <FaChalkboardTeacher
             className="text-4xl mb-4"
@@ -71,7 +71,7 @@ const WhyChooseUs = () => {
           initial="hidden"
           animate="visible"
           className="p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
-          style={{ backgroundColor: "#dff5e5" }}
+          style={{ backgroundColor: "white" }}
         >
           <FaUsers className="text-4xl mb-4" style={{ color: "#23A455" }} />
           <h3 className="text-2xl font-semibold mb-2">
