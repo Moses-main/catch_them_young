@@ -1,11 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const WelcomeBMI = () => {
   return (
     <section className="py-16 bg-[#fdf1e1]">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center">
         {/* Text Section */}
-        <div className="text-center md:text-left md:w-1/2 p-6">
+        <motion.div
+          className="text-center md:text-left md:w-1/2 p-6"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ duration: 2 }}
+        >
           <h2 className="text-4xl font-bold mb-4 text-gray-800">
             Entrepreneurship Training
           </h2>
@@ -30,16 +37,22 @@ const WelcomeBMI = () => {
           >
             Explore Learning
           </button>
-        </div>
+        </motion.div>
 
         {/* Image Section */}
-        <div className="md:w-1/2 w-full flex justify-center">
+        <motion.div
+          className="md:w-1/2 w-full flex justify-center"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 50 }}
+          transition={{ duration: 0.5 }}
+        >
           <img
             src="../images/coach.jpg"
             alt="BMI Welcome"
             className="rounded-lg shadow-lg object-cover w-full h-auto"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

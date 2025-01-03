@@ -21,7 +21,7 @@ const Features = () => {
 
   return (
     <div className="py-10 bg-[#f3f4f6]">
-      <div className="container mx-auto">
+      <div className="container  mx-auto px-4">
         <h2 className="text-center text-2xl font-bold mb-6 text-green-800">
           Features
         </h2>
@@ -29,7 +29,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-lg p-6 max-w-xs text-center transform hover:scale-105 transition-transform"
+              className="bg-white shadow-lg rounded-lg p-6 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 text-center transform hover:scale-105 transition-transform"
             >
               <img
                 src={feature.image}

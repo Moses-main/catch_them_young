@@ -1,10 +1,37 @@
 import { FaRocket, FaChalkboardTeacher, FaUsers } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const WhyChooseUs = () => {
+  const controls1 = useAnimation();
+  const controls2 = useAnimation();
+  const controls3 = useAnimation();
+  const [ref1, inView1] = useInView({ triggerOnce: true });
+  const [ref2, inView2] = useInView({ triggerOnce: true });
+  const [ref3, inView3] = useInView({ triggerOnce: true });
+
+  useEffect(() => {
+    if (inView1) {
+      controls1.start("visible");
+    }
+  }, [controls1, inView1]);
+
+  useEffect(() => {
+    if (inView2) {
+      controls2.start("visible");
+    }
+  }, [controls2, inView2]);
+
+  useEffect(() => {
+    if (inView3) {
+      controls3.start("visible");
+    }
+  }, [controls3, inView3]);
+
   const cardVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
 
   return (
@@ -17,9 +44,10 @@ const WhyChooseUs = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
         <motion.div
+          ref={ref1}
           variants={cardVariants}
           initial="hidden"
-          animate="visible"
+          animate={controls1}
           className="p-6 md:p-8 lg:p-10 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
           style={{ backgroundColor: "white" }}
         >
@@ -40,9 +68,10 @@ const WhyChooseUs = () => {
         </motion.div>
 
         <motion.div
+          ref={ref2}
           variants={cardVariants}
           initial="hidden"
-          animate="visible"
+          animate={controls2}
           className="p-6 md:p-8 lg:p-10 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
           style={{ backgroundColor: "white" }}
         >
@@ -67,9 +96,10 @@ const WhyChooseUs = () => {
         </motion.div>
 
         <motion.div
+          ref={ref3}
           variants={cardVariants}
           initial="hidden"
-          animate="visible"
+          animate={controls3}
           className="p-6 md:p-8 lg:p-10 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
           style={{ backgroundColor: "white" }}
         >
