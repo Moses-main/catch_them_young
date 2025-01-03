@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
           variants={cardVariants}
           initial="hidden"
           animate="visible"
-          className="p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+          className="p-6 md:p-8 lg:p-10 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
           style={{ backgroundColor: "white" }}
         >
           <FaRocket className="text-4xl mb-4" style={{ color: "#23A455" }} />
@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
           variants={cardVariants}
           initial="hidden"
           animate="visible"
-          className="p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+          className="p-6 md:p-8 lg:p-10 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
           style={{ backgroundColor: "white" }}
         >
           <FaChalkboardTeacher
@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
           variants={cardVariants}
           initial="hidden"
           animate="visible"
-          className="p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+          className="p-6 md:p-8 lg:p-10 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
           style={{ backgroundColor: "white" }}
         >
           <FaUsers className="text-4xl mb-4" style={{ color: "#23A455" }} />

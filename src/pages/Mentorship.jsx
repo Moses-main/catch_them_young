@@ -14,7 +14,6 @@ import getStartedAnimation from "../animations/get-started.json"; // Replace wit
 const Mentorship = () => {
   return (
     <div className="container mx-auto py-12 px-6 bg-[#f9f5f0]">
-      {" "}
       {/* Carton color background */}
       <h1 className="text-3xl font-extrabold text-center mb-8 text-emerald-700">
         Welcome to BMI-CTY Mentorship Program

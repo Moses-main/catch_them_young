@@ -13,7 +13,7 @@ const AboutUs = () => (
     <div className="my-6"></div> {/* Adds margin between sections */}
     <Team />
     <Subscribe />
-    <Map />
+    {/* <Map /> */}
   </main>
 );
 

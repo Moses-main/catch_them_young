@@ -3,20 +3,17 @@ import React from "react";
 const Features = () => {
   const features = [
     {
-      image:
-        "https://th.bing.com/th/id/OIP.XCooVZVEoUwApFjoogxQxwHaEK?w=331&h=186&c=7&r=0&o=5&pid=1.7",
+      image: "../images/compass.jpg",
       title: "Innovative Curriculum",
       description: "Curated content for ages 7–14.",
     },
     {
-      image:
-        "https://th.bing.com/th/id/OIP.l594hDMbzkuuT9RYTRTX0AHaD4?w=290&h=180&c=7&r=0&o=5&pid=1.7",
+      image: "../images/female_coach.jpg",
       title: "Community Building",
       description: "Networking with peers and mentors.",
     },
     {
-      image:
-        "https://th.bing.com/th/id/R.3bcf0c699175a5196a99053a8c19cc15?rik=tcmiN5l44xlCvA&pid=ImgRaw&r=0&sres=1&sresct=1",
+      image: "../images/tutoring_class.jpg",
       title: "Experienced Instructors",
       description: "Learn from seasoned experts.",
     },

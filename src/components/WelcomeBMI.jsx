@@ -35,7 +35,7 @@ const WelcomeBMI = () => {
         {/* Image Section */}
         <div className="md:w-1/2 w-full flex justify-center">
           <img
-            src="https://th.bing.com/th/id/OIP.KH4CzEasJ6f3-d5RNdZnFQHaEK?rs=1&pid=ImgDetMain"
+            src="../images/coach.jpg"
             alt="BMI Welcome"
             className="rounded-lg shadow-lg object-cover w-full h-auto"
           />
