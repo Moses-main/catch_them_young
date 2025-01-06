@@ -18,7 +18,7 @@ const Home = () => {
       <Features />
       {/* <MillionaireCohort /> */}
       <CourseHighlights />
-      {/* <CommunityEngagement /> */}
+
       {/* <Certificates /> */}
       <Subscribe />
     </div>

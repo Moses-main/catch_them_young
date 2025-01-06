@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 const MissionAndVision = () => {
   const [showMission, setShowMission] = useState(false);
   const [showVision, setShowVision] = useState(false);
@@ -15,30 +15,36 @@ const MissionAndVision = () => {
         <h2 className="text-3xl font-bold text-emerald-800 mb-4">
           Mission & Vision
         </h2>
-
         <div className="mission-section mb-4">
           <button
             onClick={toggleMission}
-            className="text-lg text-yellow-400 font-semibold mb-2"
+            className="flex items-center justify-between w-full text-lg text-yellow-400 font-semibold mb-2"
           >
-            {showMission ? "Hide Mission" : "Show Mission"}
+            <span>Mission</span>
+            <div className="flex items-center">
+              <span className="mr-2">{showMission ? "Hide" : "Show"}</span>
+              {showMission ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
           </button>
           {showMission && (
             <p className="text-lg text-gray-700">
               As a mission-driven organization, we are relentlessly pursuing our
               vision of a world where every graduate/young Nigerian can become a
-              successful entrepreneur by accessing BMI’s courses to unlock their
+              successful entrepreneur by accessing BMI's courses to unlock their
               potential, without the barriers of cost or location.
             </p>
           )}
         </div>
-
         <div className="vision-section mb-4">
           <button
             onClick={toggleVision}
-            className="text-lg text-yellow-400 font-semibold mb-2"
+            className="flex items-center justify-between w-full text-lg text-yellow-400 font-semibold mb-2"
           >
-            {showVision ? "Hide Vision" : "Show Vision"}
+            <span>Vision</span>
+            <div className="flex items-center">
+              <span className="mr-2">{showVision ? "Hide" : "Show"}</span>
+              {showVision ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
           </button>
           {showVision && (
             <p className="text-lg text-gray-700">
@@ -51,13 +57,16 @@ const MissionAndVision = () => {
             </p>
           )}
         </div>
-
         <div className="core-values-section mb-4">
           <button
             onClick={toggleCoreValues}
-            className="text-lg text-yellow-400 font-semibold mb-2"
+            className="flex items-center justify-between w-full text-lg text-yellow-400 font-semibold mb-2"
           >
-            {showCoreValues ? "Hide Core Values" : "Show Core Values"}
+            <span>Core Values</span>
+            <div className="flex items-center">
+              <span className="mr-2">{showCoreValues ? "Hide" : "Show"}</span>
+              {showCoreValues ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
           </button>
           {showCoreValues && (
             <ul className="list-disc pl-6 text-lg text-gray-700">

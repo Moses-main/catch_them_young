@@ -31,14 +31,14 @@ const Welcome = () => {
       exit="exit"
       variants={containerVariants}
     >
-      <div className="container mx-auto md:gap-4 flex flex-col-reverse md:flex-row items-center h-full">
+      <div className="container mx-auto md:gap-4 flex flex-col md:flex-row items-center h-full">
         {/* Image Section */}
         <motion.div
           className="md:w-1/2 w-full flex justify-center"
           variants={imageVariants}
         >
           <img
-            src="../images/female_coach.jpg"
+            src="/images/hero_pic.jpg"
             alt="Welcome Image"
             className="rounded-lg shadow-lg object-cover w-full h-auto"
           />

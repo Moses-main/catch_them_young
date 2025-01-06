@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Switch,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Mentorship from "./pages/Mentorship";

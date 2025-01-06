@@ -62,7 +62,7 @@ const Navbar = () => {
 
         {/* Hamburger Icon for Mobile */}
         <button
-          className="block md:hidden text-2xl focus:outline-none"
+          className="block md:hidden text-2xl focus:outline-none border border-4 border-solid border-white rounded-lg p-3"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
