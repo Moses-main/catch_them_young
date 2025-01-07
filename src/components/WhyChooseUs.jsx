@@ -103,8 +103,8 @@ const WhyChooseUs = () => {
       style={{ backgroundColor: "#fffaf3" }}
     >
       <h2
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-10"
-        style={{ color: "#23A455" }}
+        className="text-3xl text-emerald-800 sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-10"
+        // style={{ color: "#23A455" }}
       >
         Why Choose Us
       </h2>
@@ -130,7 +130,7 @@ const WhyChooseUs = () => {
                 className="w-full h-full object-cover absolute inset-0 transition-opacity duration-1000"
               />
             </div>
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2">
+            <h3 className="text-xl text-emerald-800 sm:text-2xl md:text-3xl font-semibold mb-2">
               {card.title}
             </h3>
             <p className="text-gray-700 mb-4 text-justify text-sm sm:text-base md:text-lg lg:text-xl">

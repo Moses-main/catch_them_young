@@ -48,13 +48,13 @@ const Welcome = () => {
           className="text-center md:text-left md:w-1/2 p-6"
           variants={textVariants}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-emerald-800">
             Entrepreneurship Training
           </h2>
-          <h3 className="text-xl md:text-2xl font-semibold text-gray-700 mb-4">
+          <h3 className="text-xl md:text-2xl font-semibold text-emerald-800 mb-4">
             Welcome To CTY
           </h3>
-          <p className="text-base md:text-lg text-gray-600 mb-6">
+          <p className="text-base md:text-lg text-justify text-gray-600 mb-6">
             Introducing BMI- CTY Academy: This academy provides platform for a
             child to get basic training and information on entrepreneurship to
             become a nation builder. The learning creates awareness on wealth
@@ -71,8 +71,8 @@ const Welcome = () => {
             Catch Them Young Entrepreneurship Training
           </p>
           <motion.button
-            className="px-6 py-2 rounded-lg font-semibold transition-colors"
-            style={{ backgroundColor: "#23A455", color: "#fff" }}
+            className="px-6 py-2 rounded-lg font-semibold transition-colors text-white bg-emerald-800"
+            // style={{ backgroundColor: "#23A455", color: "#fff" }}
             variants={buttonVariants}
             whileHover={{ boxShadow: "0 0 10px 5px #F5F5DC" }}
           >
