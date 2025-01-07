@@ -7,20 +7,21 @@ const TeamMember = ({ image, name, position, socialLinks }) => {
   const handleMouseLeave = () => setShowModal(false);
 
   return (
-    <div className="team-member relative w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4">
+    <div className="team-member relative w-full sm:w-1/2 md:w-1/3 lg:w-1/2 p-4">
       <div
         className="relative group cursor-pointer"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {/* Image with the appropriate classes for responsiveness */}
+        {/* Responsive image */}
         <img
-          className="w-300 h-80 object-cover rounded-lg shadow-md transition-all duration-300"
+          className="w-full md:w-[400px] md:h-[300px] h-auto object-contain rounded-lg shadow-md transition-all duration-300"
           src={image}
           alt={name}
         />
+
         {showModal && (
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 rounded-lg">
             <div className="text-center text-white p-4 bg-gray-800 rounded-lg">
               <h4 className="text-xl font-bold">{name}</h4>
               <p className="text-lg">{position}</p>
@@ -79,7 +80,7 @@ const Team = () => {
       <h2 className="text-3xl font-bold text-emerald-800 text-center mb-6">
         Our Team
       </h2>
-      <div className="flex">
+      <div className="flex flex-wrap">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}
