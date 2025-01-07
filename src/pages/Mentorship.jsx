@@ -23,7 +23,7 @@ const Mentorship = () => {
   const sectionsData = [
     {
       title: "Welcome to BMI-CTY Academy Mentorship Program",
-      image: "/images/hero_pic.jpg",
+      image: "/images/NERDC_approved_books.jpg",
       animation: mentorshipAnimation,
       description: "",
       list: [],

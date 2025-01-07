@@ -75,7 +75,7 @@ const Navbar = () => {
             <li key={index} className="relative group">
               <Link
                 to={`/${item.toLowerCase().replace(/\s/g, "")}`}
-                className="text-lg hover:text-emerald-200 transition"
+                className="text-lg hover:text-yellow-800 transition hover:border-b-4 hover:border-emerald-800 duration-300"
               >
                 {item}
               </Link>

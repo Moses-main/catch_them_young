@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="container mx-auto py-10 px-4 md:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold text-center mb-6 mt-6 sm:text-4xl">
+      <h1 className="text-3xl text-emerald-800 font-bold text-center mb-6 mt-6 sm:text-4xl">
         Contact Us
       </h1>
       <p className="text-center md:text-lg mb-10 sm:text-xl">
@@ -67,7 +67,7 @@ const Contact = () => {
             placeholder="Write your message here..."
           ></textarea>
         </div>
-        <button className="w-full bg-navy text-navy py-2 rounded-lg font-semibold border border-2 hover:bg-primary-dark sm:text-lg">
+        <button className="w-full bg-navy bg-emerald-800 text-white text-navy py-2 rounded-lg font-semibold border border-2 hover:bg-primary-dark sm:text-lg">
           Submit
         </button>
       </form>
