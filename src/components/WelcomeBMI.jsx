@@ -13,28 +13,39 @@ const WelcomeBMI = () => {
           exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 2 }}
         >
-          <h2 className="text-4xl font-bold mb-4 text-gray-800">
-            Entrepreneurship Training
+          <h2 className="md:text-4xl text-lg font-bold mb-4 text-emerald-800">
+            Our Mentorship Process
           </h2>
-          <h3 className="text-2xl font-semibold text-gray-700 mb-4">
-            Welcome To BMI
+          <h3 className="md:text-2xl font-semibold text-emerald-800 mb-4">
+            At BMI-CTY Academy
           </h3>
-          <p className="text-gray-600 mb-6">
-            We are delighted to welcome you to BMI Portal. The world is
-            constantly changing and evolving as technology advances. We have to
-            accept these changes and position to harness all the wonderful
-            benefits. From changing perspectives on history and studies of
-            people to the world of computer science, there’s more to know yet.
-            We are leveraging these technological advancements to train
-            potential entrepreneurs.
+          <p className="text-gray-600 text-justify text-sm mb-6">
+            We believe in a structured yet flexible approach to mentorship.
+            Here's how the process works:
           </p>
-          <p className="text-gray-600 mb-6">
-            At BMI, we deliberately hatch your pondered ideas
-          </p>
-          <button
-            className="px-6 py-2 rounded-lg font-semibold transition-colors"
-            style={{ backgroundColor: "#23A455", color: "#fff" }}
-          >
+          <ul className="text-gray-600 text-justify text-sm mb-6 list-disc list-inside">
+            <li>
+              <strong>Sign Up:</strong> Submit your application to join the
+              mentorship program.
+            </li>
+            <li>
+              <strong>Matching:</strong> Based on your needs and goals, we match
+              you with the right mentor.
+            </li>
+            <li>
+              <strong>Mentorship Sessions:</strong> Engage in regular one-on-one
+              mentorship meetings and collaborative discussions.
+            </li>
+            <li>
+              <strong>Skill Development:</strong> Participate in workshops,
+              masterclasses, and networking events to develop new skills.
+            </li>
+            <li>
+              <strong>Ongoing Support:</strong> We continue to support you
+              through every challenge, helping you stay focused and motivated.
+            </li>
+          </ul>
+          <button className="px-6 py-2 rounded-lg font-semibold bg-emerald-800 text-white transition-colors">
             Explore Learning
           </button>
         </motion.div>
@@ -48,7 +59,7 @@ const WelcomeBMI = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src="../images/coach.jpg"
+            src="/images/early_adoption.jpg"
             alt="BMI Welcome"
             className="rounded-lg shadow-lg object-cover w-full h-auto"
           />
