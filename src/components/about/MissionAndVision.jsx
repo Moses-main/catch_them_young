@@ -10,9 +10,16 @@ const MissionAndVision = () => {
   const toggleCoreValues = () => setShowCoreValues(!showCoreValues);
 
   return (
-    <section className="mission-vision flex flex-col lg:flex-row p-6 bg-white shadow-lg rounded-lg">
-      <div className="content lg:w-1/2 w-full lg:pr-8 mb-4 lg:mb-0">
-        <h2 className="text-3xl font-bold text-emerald-800 mb-4">
+    <section className="mission-vision flex flex-col lg:flex-row p-6 gap-6 bg-white shadow-lg rounded-lg">
+      <div className="image lg:w-1/2 w-full mt-4 lg:mt-0">
+        <img
+          className="w-full h-auto rounded-lg"
+          src="/images/early_adoption.jpg"
+          alt="Mission and Vision"
+        />
+      </div>
+      <div className="content lg:w-1/2 mt-4 w-full lg:pr-8 mb-4 lg:mb-0">
+        <h2 className="text-3xl font-bold text-emerald-800 text-center mb-4">
           Mission & Vision
         </h2>
         <div className="mission-section mb-4">
@@ -93,14 +100,6 @@ const MissionAndVision = () => {
             </ul>
           )}
         </div>
-      </div>
-
-      <div className="image lg:w-1/2 w-full mt-4 lg:mt-0">
-        <img
-          className="w-full h-auto rounded-lg"
-          src="path-to-image.jpg"
-          alt="Mission and Vision"
-        />
       </div>
     </section>
   );

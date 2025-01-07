@@ -72,7 +72,7 @@ const Mentorship = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-3xl font-extrabold text-center mb-8 text-emerald-700"
+        className="md:text-3xl  font-extrabold md:mt-8 text-center mb-8 text-emerald-700"
       >
         Welcome to BMI-CTY Mentorship Program
       </motion.h1>
@@ -85,34 +85,39 @@ const Mentorship = () => {
           variants={sectionVariants}
           className="mb-10 border-b-2 border-emerald-200 shadow-lg p-6 rounded-lg bg-white"
         >
-          <h2 className="text-3xl font-semibold text-center mb-4 text-emerald-700">
-            {section.title}
-          </h2>
-          <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-6 mb-6">
-            <div className="relative w-full md:w-1/2">
-              {/* Lottie animation as background */}
-              <Lottie
-                animationData={section.animation}
-                className="absolute inset-0 w-full h-full object-cover z-0"
-              />
-              {/* Description overlay */}
-              <p className="text-lg text-center md:text-left text-gray-700 relative z-10 bg-opacity-70 bg-white p-4 rounded-lg">
-                {section.description}
-              </p>
-            </div>
-            <div className="space-y-4">
-              {section.list && (
-                <ul className="text-lg text-gray-700 list-disc list-inside">
-                  {section.list.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              )}
+          <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+            {/* Image Section */}
+            <div className="w-full md:w-1/2">
               <img
                 src={section.image}
                 alt={section.title}
-                className="rounded-lg w-full md:w-96"
+                className="rounded-lg w-full md:w-full object-cover"
               />
+            </div>
+
+            {/* Text Content Section */}
+            <div className="w-full md:w-1/2 space-y-4">
+              <h2 className="md:text-3xl font-semibold text-center md:text-center md:mt-4 text-emerald-700">
+                {section.title}
+              </h2>
+              <div className="relative">
+                {/* Lottie animation */}
+                <Lottie
+                  animationData={section.animation}
+                  className="absolute inset-0 w-full h-full object-cover z-0 scale-75 md:scale-100"
+                />
+                {/* Description overlay */}
+                <p className="md:text-xl  text-sm text-justify md:text-justify text-center md:text-left text-gray-700 relative z-10 bg-opacity-80 bg-white p-4 rounded-lg">
+                  {section.description}
+                </p>
+                {section.list && (
+                  <ul className="md:text-xl text-sm text-justify text-gray-700 text-center md:text-left list-disc list-inside relative z-10 bg-opacity-80 bg-white p-4 rounded-lg">
+                    {section.list.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </div>
           </div>
         </motion.section>
@@ -126,17 +131,17 @@ const Mentorship = () => {
         variants={sectionVariants}
         className="text-center mb-10 bg-white shadow-lg p-6 rounded-lg"
       >
-        <h2 className="text-3xl font-semibold text-emerald-700 mb-4">
+        <h2 className="md:text-3xl font-semibold text-emerald-700 mb-4">
           Start Your Mentorship Journey Now
         </h2>
-        <p className="text-lg text-gray-700 mb-6">
+        <p className="md:text-xl text-sm md:w-[70%] md:m-auto text-justify text-gray-700 md:mb-6 mb-6 md:text-center md:my-10">
           Don’t miss the opportunity to work with the best in the business.
           Subscribe to our mentorship program and start receiving personalized
           support to help you achieve your entrepreneurial dreams.
         </p>
         <a
           href="/mentorship-signup"
-          className="bg-emerald-600 text-white px-6 py-2 rounded-md shadow-md hover:bg-emerald-800"
+          className="bg-emerald-600 text-white  px-6 py-2 rounded-md shadow-md hover:bg-emerald-800"
         >
           Get Started
         </a>

@@ -7,7 +7,7 @@ const TeamMember = ({ image, name, position, socialLinks }) => {
   const handleMouseLeave = () => setShowModal(false);
 
   return (
-    <div className="team-member relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+    <div className="team-member relative w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4">
       <div
         className="relative group cursor-pointer"
         onMouseEnter={handleMouseEnter}
