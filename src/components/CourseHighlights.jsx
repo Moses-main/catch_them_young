@@ -47,7 +47,7 @@ const courses = [
     title: "Real-Life Studies & Projects",
     description:
       "Apply your learning to real-life entrepreneurial challenges through hands-on projects and case study analyses.",
-    image: "/images/freal_life_studies.jpeg", // Placeholder image URL
+    image: "/images/real_life_studies.jpeg", // Placeholder image URL
   },
 ];
 
@@ -65,31 +65,39 @@ const CourseHighlights = () => {
   };
 
   return (
-    <section className="relative py-16" style={{ backgroundColor: "#fdf1e1" }}>
-      <div className="container mx-auto h-screen flex flex-col justify-center">
-        <h2 className="text-center text-4xl font-bold mb-8 text-emerald-800 animate-fadeInUp">
+    <section
+      className="relative py-4 md:py-16"
+      style={{ backgroundColor: "#fdf1e1" }}
+    >
+      <div className="container mx-auto flex flex-col items-center">
+        <h2 className="text-center text-lg md:text-4xl font-bold mb-4 text-emerald-800 animate-fadeInUp">
           Course Highlights
         </h2>
-        <Slider {...settings} className="h-full">
+
+        {/* Carousel/Slider */}
+        <Slider {...settings} className="w-full">
           {courses.map((course) => (
             <div
               key={course.id}
-              className="flex items-center justify-center p-6 bg-gray-50 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 animate-fadeIn"
+              className="flex flex-col items-center justify-center w-full"
             >
-              <div className="w-full h-full flex items-center justify-between">
-                <div className="w-1/2 p-4">
-                  <h3 className="text-xl font-semibold text-emerald-800 mb-4">
-                    {course.title}
-                  </h3>
-                  <p className="text-gray-600">{course.description}</p>
-                </div>
-                <div className="w-1/2 p-4">
-                  <img
-                    src={course.image}
-                    alt={course.title}
-                    className="w-full h-full object-cover rounded-lg shadow-md"
-                  />
-                </div>
+              {/* Image Section */}
+              <div className="w-full">
+                <img
+                  src={course.image}
+                  alt={course.title}
+                  className="md:w-full w-[95%] mx-auto h-[300px] md:h-[650px] object-cover rounded-md"
+                />
+              </div>
+
+              {/* Content Section */}
+              <div className="w-full md:w-3/4 px-6 py-4 bg-gray-50 rounded-lg shadow-md">
+                <h3 className="text-xl md:text-2xl font-semibold text-emerald-800 mb-4">
+                  {course.title}
+                </h3>
+                <p className="text-gray-600 text-base md:text-lg">
+                  {course.description}
+                </p>
               </div>
             </div>
           ))}
