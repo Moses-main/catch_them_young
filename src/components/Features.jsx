@@ -9,16 +9,16 @@ const Features = () => {
         "Curated textbooks and workbooks for entrepreneurship and financial literacy for ages 7–14.",
     },
     {
-      image: "/images/early_development.jpg",
+      image: "/images/early_adoption.jpg",
       title: "Mentorship for Every Stage",
       description:
         " Whether you're just starting out, refining your business model, or scaling your company, we have mentors with the expertise you need..",
     },
     {
-      image: "../images/tutoring_class.jpg",
-      title: "Experienced Instructors",
+      image: "/images/budgeting.jpg",
+      title: "Support in Key Areas",
       description:
-        "Learn from seasoned experts, Video lessons and quizzes to engage students interactively",
+        " Gain insight into areas like business strategy, marketing, financial planning, leadership, product development, and more.",
     },
   ];
 
@@ -34,14 +34,14 @@ const Features = () => {
               key={index}
               className="bg-white shadow-lg rounded-lg p-6 text-center transform hover:scale-105 transition-transform"
             >
-              <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 mb-4 overflow-hidden rounded-lg">
+              <div className="relative w-full h-64 sm:h-70 md:h-80 lg:h-96  overflow-hidden rounded-lg">
                 <img
                   src={feature.image}
                   alt={feature.title}
                   className="w-full h-auto object-contain absolute inset-0  transition-opacity duration-1000 rounded-lg"
                 />
               </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-emerald-800 mb-2">
+              <h3 className="text-xl sm:text-2xl md:text-3xl -mt-15 font-semibold text-emerald-800 mb-2">
                 {feature.title}
               </h3>
               <p className="mt-2 text-emerald-800 text-sm sm:text-base md:text-lg">

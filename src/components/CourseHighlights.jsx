@@ -12,13 +12,42 @@ const courses = [
     id: 2,
     title: "Critical Thinking Skills",
     description: "Develop problem-solving abilities for real-world scenarios.",
-    image: "https://via.placeholder.com/600x400", // Placeholder image URL
+    image: "/images/critical_thinking.avif", // Placeholder image URL
   },
   {
     id: 3,
-    title: "Innovation & Creativity",
-    description: "Explore creative strategies for business success.",
-    image: "https://via.placeholder.com/600x400", // Placeholder image URL
+    title: "Leadership and Team Building",
+    description:
+      "Learn how to lead teams effectively, inspire collaboration, and build a productive organizational culture..",
+    image: "/images/leadership_and_team.jpg", // Placeholder image URL
+  },
+  {
+    id: 4,
+    title: "Business Model Development",
+    description:
+      "Understand how to create sustainable and scalable business models using proven frameworks like the Business Model Canvas.",
+    image: "/images/business_model.jpg", // Placeholder image URL
+  },
+  {
+    id: 5,
+    title: "Digital Marketing and Branding",
+    description:
+      "Discover how to leverage digital tools and social media platforms to market your business and build a strong brand identity",
+    image: "/images/digital_marketing.avif", // Placeholder image URL
+  },
+  {
+    id: 6,
+    title: "Financial Literacly & Management",
+    description:
+      "Master the fundamentals of financial planning, budgeting, and resource management to ensure business profitability and growth.",
+    image: "/images/financial-literacy.jpg", // Placeholder image URL
+  },
+  {
+    id: 7,
+    title: "Real-Life Studies & Projects",
+    description:
+      "Apply your learning to real-life entrepreneurial challenges through hands-on projects and case study analyses.",
+    image: "/images/freal_life_studies.jpeg", // Placeholder image URL
   },
 ];
 
