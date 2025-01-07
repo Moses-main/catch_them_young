@@ -3,16 +3,16 @@ import React from "react";
 const Features = () => {
   const features = [
     {
-      image: "../images/approved_books.jpg",
+      image: "../images/access_to_resource.jpg",
       title: "NERDC-approved textbooks and workbooks..",
       description:
         "Curated textbooks and workbooks for entrepreneurship and financial literacy for ages 7–14.",
     },
     {
-      image: "../images/female_coach.jpg",
-      title: "Community Building",
+      image: "/images/early_development.jpg",
+      title: "Mentorship for Every Stage",
       description:
-        "Discussion books to facilitate parent-child dialogues on entrepreneurship..",
+        " Whether you're just starting out, refining your business model, or scaling your company, we have mentors with the expertise you need..",
     },
     {
       image: "../images/tutoring_class.jpg",
@@ -38,7 +38,7 @@ const Features = () => {
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-full h-full object-contain absolute inset-0 transition-opacity duration-1000 rounded-lg"
+                  className="w-full h-auto object-contain absolute inset-0  transition-opacity duration-1000 rounded-lg"
                 />
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-emerald-800 mb-2">

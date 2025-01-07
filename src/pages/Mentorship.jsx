@@ -3,8 +3,8 @@ import { motion } from "motion/react"; // Updated import
 import Lottie from "lottie-react";
 import mentorshipAnimation from "../animations/mentorship.json";
 import howItWorksAnimation from "../animations/how-it-works.json";
-import benefitsAnimation from "../animations/benefits.json";
-import getStartedAnimation from "../animations/get-started.json";
+// import benefitsAnimation from "../animations/benefits.json";
+// import getStartedAnimation from "../animations/get-started.json";
 
 const Mentorship = () => {
   const [showMore, setShowMore] = useState(false);
