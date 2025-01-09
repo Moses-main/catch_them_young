@@ -6,11 +6,9 @@ import Subscribe from "../components/Subscribe";
 // import Map from "../components/Map";
 
 const AboutUs = () => (
-  <main className="about-us max-w-screen-xl md:mt-60 mx-auto p-6">
+  <main className="about-us max-w-screen-xl md:mt-60 mx-auto p-6 flex flex-col gap-12">
     <WhoWeAre />
-    <div className="my-6"></div> {/* Adds margin between sections */}
     <MissionAndVision />
-    <div className="my-6"></div> {/* Adds margin between sections */}
     <Team />
     <Subscribe />
     {/* <Map /> */}

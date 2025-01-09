@@ -25,7 +25,7 @@ const Welcome = () => {
 
   return (
     <motion.section
-      className="py-16 bg-white min-h-screen md:mt-20"
+      className="py-16 bg-[#f3f4f6] min-h-screen md:mt-20"
       initial="hidden"
       animate="visible"
       exit="exit"
@@ -64,7 +64,7 @@ const Welcome = () => {
           <h3 className="text-xl md:text-2xl font-semibold text-emerald-800 mb-4">
             Welcome To CTY
           </h3>
-          <p className="text-base md:text-lg text-justify text-gray-600 mb-6">
+          <p className="text-base md:text-lg text-justify text-gray-600 font-bold mb-6">
             Introducing BMI- CTY Academy: This academy provides platform for a
             child to get basic training and information on entrepreneurship to
             become a nation builder. The learning creates awareness on wealth
@@ -72,7 +72,7 @@ const Welcome = () => {
             contributes toward capacity development and building right mentality
             for innovations.
           </p>
-          <p className="text-base md:text-lg text-gray-600 mb-6">
+          <p className="text-base font-bold md:text-lg text-gray-600 mb-6">
             Young learners start early to get additional training, knowledge and
             attributes needed to bring out their best abilities in the context
             of starting up a new business and monetizing their talents.
@@ -95,7 +95,7 @@ const Welcome = () => {
         <h2 className="md:text-3xl text-lg font-bold text-emerald-800 mb-6">
           Empowering the Next Generation of Entrepreneurs
         </h2>
-        <p className="md:text-lg text-gray-700 text-sm mb-6 ">
+        <p className="md:text-lg font-bold text-gray-700 text-sm mb-6 ">
           The BMI-CTY Academy Mentorship Program is more than guidance—it's a
           partnership built on growth, innovation, and shared aspirations. We
           are committed to nurturing the next generation of leaders by
@@ -111,7 +111,7 @@ const Welcome = () => {
             <h4 className="font-semibold text-lg text-emerald-800">
               One-on-One Mentorship
             </h4>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 font-bold text-sm">
               Tailored advice and insights from industry leaders who have walked
               the path of entrepreneurship.
             </p>
@@ -125,7 +125,7 @@ const Welcome = () => {
             <h4 className="font-semibold text-lg text-emerald-800">
               Real-World Knowledge
             </h4>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 font-bold text-sm">
               Guidance on navigating challenges, identifying opportunities, and
               implementing innovative solutions.
             </p>
@@ -139,7 +139,7 @@ const Welcome = () => {
             <h4 className="font-semibold text-lg text-emerald-800">
               Access to Resources
             </h4>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 font-bold text-sm">
               Exclusive tools, case studies, and proven strategies to support
               your entrepreneurial journey.
             </p>
@@ -149,14 +149,14 @@ const Welcome = () => {
         <h3 className="md:text-2xl text-lg font-semibold text-emerald-800 mb-6">
           Why Mentorship Matters
         </h3>
-        <p className="md:text-lg  text-gray-700 mb-6 text-justify">
+        <p className="md:text-lg  font-bold text-gray-700 mb-6 text-justify">
           At BMI-CTY Academy, we believe mentorship is the cornerstone of
           success. Research has shown that mentorship improves decision-making,
           enhances problem-solving, and significantly boosts the likelihood of
           entrepreneurial success. By connecting with experienced mentors, young
           entrepreneurs can learn to:
         </p>
-        <ul className="list-disc text-left md:text-lg text-gray-600 px-3 mx-auto max-w-2xl mb-6">
+        <ul className="list-disc font-bold text-left md:text-lg text-gray-600 px-3 mx-auto max-w-2xl mb-6">
           <li>Avoid common pitfalls.</li>
           <li>Develop actionable business strategies.</li>
           <li>Build resilience and confidence.</li>

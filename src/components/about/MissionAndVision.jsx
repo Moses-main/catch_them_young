@@ -29,12 +29,12 @@ const MissionAndVision = () => {
           >
             <span>Mission</span>
             <div className="flex items-center">
-              <span className="mr-2">{showMission ? "Hide" : "Show"}</span>
-              {showMission ? <FaChevronUp /> : <FaChevronDown />}
+              <span className="mr-2">{showMission ? "Show" : "Hide"}</span>
+              {!showMission ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </button>
-          {showMission && (
-            <p className="md:text-lg text-sm text-justify  text-gray-700">
+          {!showMission && (
+            <p className="md:text-lg py-5 text-sm text-justify  text-gray-700">
               As a mission-driven organization, we are relentlessly pursuing our
               vision of a world where every graduate/young Nigerian can become a
               successful entrepreneur by accessing BMI's courses to unlock their
@@ -45,7 +45,7 @@ const MissionAndVision = () => {
         <div className="vision-section mb-4">
           <button
             onClick={toggleVision}
-            className="flex items-center justify-between w-full text-lg text-emerald-800 font-semibold mb-2"
+            className="flex items-center py-5 justify-between w-full text-lg text-emerald-800 font-semibold mb-2"
           >
             <span>Vision</span>
             <div className="flex items-center">
