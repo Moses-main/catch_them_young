@@ -71,18 +71,20 @@ const Navbar = () => {
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex space-x-6">
-          {["Home", "Mentorship", "About", "Contact"].map((item, index) => (
-            <li key={index} className="relative group">
-              <Link
-                to={`/${item.toLowerCase().replace(/\s/g, "")}`}
-                className="text-lg hover:text-yellow-800 transition hover:border-b-4 hover:border-emerald-800 duration-300"
-              >
-                {item}
-              </Link>
-              {/* Underline Animation */}
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
-            </li>
-          ))}
+          {["Home", "Program", "Mentorship", "About", "Contact"].map(
+            (item, index) => (
+              <li key={index} className="relative group">
+                <Link
+                  to={`/${item.toLowerCase().replace(/\s/g, "")}`}
+                  className="text-lg hover:text-emerald-800 transition hover:border-b-4 hover:border-emerald-800 duration-300"
+                >
+                  {item}
+                </Link>
+                {/* Underline Animation */}
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+              </li>
+            )
+          )}
         </ul>
 
         {/* Mobile Menu */}

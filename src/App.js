@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Mentorship from "./pages/Mentorship";
 import About from "./pages/About";
@@ -12,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Networking from "./pages/Networking";
 import Layout from "./layout/Layout";
 import Certificates from "./pages/Certificate";
+import ProgramPage from "./pages/Program";
 const App = () => {
   return (
     <Router>
@@ -26,6 +23,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/networking" element={<Networking />} />
           <Route path="/certificates" element={<Certificates />} />
+          <Route path="/program" element={<ProgramPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
