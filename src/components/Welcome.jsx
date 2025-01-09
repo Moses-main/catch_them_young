@@ -95,14 +95,14 @@ const Welcome = () => {
         <h2 className="md:text-3xl text-lg font-bold text-emerald-800 mb-6">
           Empowering the Next Generation of Entrepreneurs
         </h2>
-        <p className="md:text-lg text-gray-700 text-sm mb-6">
+        <p className="md:text-lg text-gray-700 text-sm mb-6 ">
           The BMI-CTY Academy Mentorship Program is more than guidance—it's a
           partnership built on growth, innovation, and shared aspirations. We
           are committed to nurturing the next generation of leaders by
           providing:
         </p>
         <div className="md:flex md:gap-10 mb-8">
-          <div className="flex flex-col items-center mb-6 md:mb-0">
+          <div className="flex flex-col items-center mb-6 md:mb-0 border-2 border-emerald-800 rounded-md hover:border-orange-800 hover:scale-105 hover:shadow-lg transition-all duration-300 p-4">
             <img
               src="/images/intro_to_mentorship.jpg"
               alt="One-on-One Mentorship"
@@ -116,7 +116,7 @@ const Welcome = () => {
               the path of entrepreneurship.
             </p>
           </div>
-          <div className="flex flex-col items-center mb-6 md:mb-0">
+          <div className="flex flex-col items-center mb-6 md:mb-0 border-2 border-emerald-800 rounded-md hover:border-orange-800 hover:scale-105 hover:shadow-lg transition-all duration-300 p-4">
             <img
               src="/images/holistic_learning.jpeg"
               alt="Real-World Knowledge"
@@ -130,7 +130,7 @@ const Welcome = () => {
               implementing innovative solutions.
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center border-2 border-emerald-800 rounded-md hover:border-orange-800 hover:scale-105 hover:shadow-lg transition-all duration-300 p-4">
             <img
               src="/images/access_to_resource.jpg"
               alt="Access to Resources"
