@@ -28,6 +28,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -50,3 +51,60 @@
   }
 }
 
+/* Keyframes for typing effect */
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Keyframes for erasing effect */
+@keyframes erase {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Keyframes for cycling words (no content change) */
+@keyframes cycleText {
+  0%, 100% {
+    content: "Welcome to BMI Entrepreneurship Training"; /* First text */
+  }
+  33% {
+    content: "Empowering the Next Generation of Entrepreneurs"; /* Second text */
+  }
+  66% {
+    content: "Join Us Today to Learn and Grow!"; /* Third text */
+  }
+}
+
+/* Style for the typing container */
+.typewriter-container {
+  display: inline-block;
+  border-right: 4px solid #fff; /* Simulates the cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 2rem;
+  animation: cycleText 12s infinite, typewriter 4s steps(50) 1s infinite normal both, erase 2s steps(50) 8s infinite normal forwards, blink 1s step-end infinite;
+  word-wrap: break-word;
+}
+
+/* Add blinking cursor effect */
+@keyframes blink {
+  0%, 50% {
+    border-color: transparent;
+  }
+  50.1%, 100% {
+    border-color: white;
+  }
+}
+
+.typewriter-container {
+  animation: cycleText 12s infinite, typewriter 4s steps(50) 1s infinite normal both, erase 2s steps(50) 8s infinite normal forwards, blink 1s step-end infinite;
+}

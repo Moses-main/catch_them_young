@@ -1,5 +1,5 @@
 import React from "react";
-
+import Testimony from "../components/Testimonial";
 const ProgramPage = () => {
   return (
     <main className="program-page max-w-screen-xl md:mt-40 mt-20 mx-auto p-6">
@@ -118,6 +118,8 @@ const ProgramPage = () => {
           </div>
         </div>
       </section>
+
+      <Testimony />
     </main>
   );
 };

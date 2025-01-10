@@ -19,3 +19,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Optionally, you can add CSS for a blinking cursor if needed */
+#typewriter::after {
+  content: '|';
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    color: transparent;
+  }
+  50.1%, 100% {
+    color: black;
+  }
+}
+
