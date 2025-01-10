@@ -61,16 +61,12 @@ const Welcome = () => {
           <h2 className="text-2xl md:text-4xl font-bold mb-4 text-emerald-800">
             Entrepreneurship Training
           </h2>
-          <h3 className="text-xl md:text-2xl font-semibold text-emerald-800 mb-4">
-            Welcome To CTY
-          </h3>
           <p className="text-sm md:text-lg text-justify text-gray-600 font-bold mb-6">
-            Introducing BMI- CTY Academy: This academy provides platform for a
-            child to get basic training and information on entrepreneurship to
-            become a nation builder. The learning creates awareness on wealth
-            creation, talent enhancement and business development. It
-            contributes toward capacity development and building right mentality
-            for innovations.
+            BMI- CTY Academy provides platform for a child to get basic training
+            and information on entrepreneurship to become a nation builder. The
+            learning creates awareness on wealth creation, talent enhancement
+            and business development. It contributes toward capacity development
+            and building right mentality for innovations.
           </p>
           <p className="text-sm text-justify font-bold md:text-lg text-gray-600 mb-6">
             Young learners start early to get additional training, knowledge and
