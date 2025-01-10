@@ -13,10 +13,13 @@ const WhoWeAre = () => (
           Who We Are
         </h2>
         <p className="md:text-lg font-bold text-sm text-justify text-gray-700 mb-4">
-          We are a Network of Successful African Business People mentoring and
-          teaching Nation Builders how to live a lifestyle of Leadership &
-          Excellence. BMI is a hub where young entrepreneurs are groomed for
-          excellence.
+          Founded in 2015, Business Matters Incubators (BMI) has been dedicated
+          to nurturing young minds with the entrepreneurial spirit. Our mission
+          is simple yet profound: to teach children aged 8-13 the fundamentals
+          of entrepreneurship. We believe the younger we start, the greater the
+          impact on future generations. BMI-CTY is a key program designed to
+          equip young learners with skills that will help them excel in both
+          business and life..
         </p>
         <p className="md:text-lg text-sm font-bold text-justify text-gray-700 mb-4">
           With our Online Entrepreneurship Courses, you will learn how to

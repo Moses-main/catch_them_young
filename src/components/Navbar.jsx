@@ -62,7 +62,7 @@ const Navbar = () => {
 
         {/* Hamburger Icon for Mobile */}
         <button
-          className="block md:hidden text-2xl focus:outline-none border border-4 border-solid border-white rounded-lg p-3"
+          className="block md:hidden text-2xl focus:outline-none border border-4 border-solid border-emerald-700 rounded-lg p-3"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -93,21 +93,23 @@ const Navbar = () => {
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          {["Home", "Mentorship", "About", "Contact"].map((item, index) => (
-            <li key={index} className="w-full text-center">
-              <Link
-                to={`/${item.toLowerCase().replace(/\s/g, "")}`}
-                className="text-lg hover:text-emerald-800 transition block py-3"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item}
-              </Link>
-              {index < 3 && (
-                <div className="border-b border-gray-300 w-full"></div>
-              )}
-              {/* Add border for all except last item */}
-            </li>
-          ))}
+          {["Home", "Program", "Mentorship", "About", "Contact"].map(
+            (item, index) => (
+              <li key={index} className="w-full text-center">
+                <Link
+                  to={`/${item.toLowerCase().replace(/\s/g, "")}`}
+                  className="text-lg hover:text-emerald-800 transition block py-3"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item}
+                </Link>
+                {index < 3 && (
+                  <div className="border-b border-gray-300 w-full"></div>
+                )}
+                {/* Add border for all except last item */}
+              </li>
+            )
+          )}
         </ul>
       </nav>
     </header>

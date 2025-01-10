@@ -35,8 +35,10 @@ const Subscribe = () => {
 
   return (
     <div className="subscribe-container bg-[#f3f4f6] p-6 rounded-md shadow-md text-center">
-      <h3 className="text-2xl text-emerald-800 font-bold mb-4">Stay Updated</h3>
-      <p className="mb-4">
+      <h3 className="md:text-2xl text-base text-emerald-800 font-bold mb-4">
+        Stay Updated
+      </h3>
+      <p className="mb-4 text-sm md:text-base font-bold">
         Subscribe to get the latest updates on our Entrepreneurship Courses and
         News.
       </p>

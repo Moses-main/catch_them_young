@@ -5,7 +5,7 @@ const ProgramPage = () => {
     <main className="program-page max-w-screen-xl md:mt-40 mt-20 mx-auto p-6">
       {/* BMI-CTY Entrepreneurship Education Program Section */}
       <section className="bmi-cty-program bg-white shadow-lg rounded-lg p-6 mb-8">
-        <h2 className="text-3xl font-bold text-emerald-800 md:mb-10 mb-4 text-center">
+        <h2 className="md:text-3xl text-base font-bold text-emerald-800 md:mb-10 mb-4 text-center">
           BMI-CTY Entrepreneurship Education Program
         </h2>
         <div className="flex flex-col items-center gap-8">
@@ -107,7 +107,7 @@ const ProgramPage = () => {
               alt="Children learning coding"
             />
           </div>
-          <div className="text-content lg:w-1/2">
+          <div className="text-content lg:w-1/2 p-5">
             <p className="md:text-lg text-justify text-sm font-bold text-gray-700 ">
               In today's digital age, having technical skills is crucial. That’s
               why BMI-CTY includes a Digital Skill Lab program where children

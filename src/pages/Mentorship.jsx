@@ -178,7 +178,7 @@ const Mentorship = () => {
                 {/* Lottie animation */}
                 <Lottie
                   animationData={section.animation}
-                  className="absolute inset-0 w-full h-full object-cover z-0 scale-75 md:scale-100"
+                  className="absolute inset-0 md:w-full md:h-full h-50 w-50 object-cover z-0 scale-75 md:scale-100"
                 />
 
                 {/* Dynamic Content */}
@@ -188,7 +188,7 @@ const Mentorship = () => {
                       return (
                         <motion.p
                           key={i}
-                          className="md:text-xl text-sm text-justify md:text-justify text-gray-700"
+                          className="md:text-xl font-bold text-sm text-justify md:text-justify text-gray-700"
                           variants={contentVariants}
                         >
                           {item.text}
@@ -212,7 +212,9 @@ const Mentorship = () => {
                           variants={contentVariants}
                         >
                           {item.items.map((listItem, j) => (
-                            <li key={j}>{listItem}</li>
+                            <li key={j} className="font-bold">
+                              {listItem}
+                            </li>
                           ))}
                         </motion.ul>
                       );
@@ -246,7 +248,7 @@ const Mentorship = () => {
                   >
                     <a
                       href={section.button.action}
-                      className="bg-emerald-700 text-white px-4 py-2 rounded-full hover:bg-emerald-800"
+                      className="bg-emerald-700 text-white px-6 py-2 rounded-full hover:bg-yellow-800"
                     >
                       {section.button.text}
                     </a>
