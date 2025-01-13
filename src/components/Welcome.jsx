@@ -76,18 +76,18 @@ const Welcome = () => {
       </motion.div>
       {/* Text Section */}
       <motion.div
-        className="container mx-auto md:gap-4 flex flex-col items-center md:flex-row-reverse h-full"
+        className="container gap-4 mx-auto flex flex-col items-center md:flex-row-reverse h-full mb-24 mt-16" // Added mt-16 for top spacing
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         exit="exit"
         variants={containerVariants}
       >
-        <div className="text-center md:text-left md:w-1/2 p-6">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-emerald-800">
+        <div className="text-center md:text-left w-full ml-4  md:w-1/2 md:p-6 p-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 text-emerald-800">
             Entrepreneurship Training
           </h2>
-          <p className="text-sm md:text-lg text-justify text-gray-600 font-bold mb-6">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-justify text-gray-600 px-2 sm:px-4 py-6 sm:py-12 font-bold mb-6">
             BMI-CTY Academy provides platform for a child to get basic training
             and information on entrepreneurship to become a nation builder.
           </p>
@@ -103,25 +103,33 @@ const Welcome = () => {
             Explore Learning
           </motion.button>
         </div>
+
+        <div className="hidden md:block md:w-1/2">
+          <img
+            src="/images/financial-literacy.jpg"
+            alt="Welcome Side Image"
+            className="w-full h-full rounded-lg shadow-lg object-cover"
+          />
+        </div>
       </motion.div>
 
       {/* Mentorship Program Section */}
       <motion.div
-        className="container mx-auto py-16 px-4 text-center"
+        className="container mx-auto py-16 px-4 text-center mt-12 lg:py-24 lg:px-8 xl:py-32 xl:px-12" // Adjusted padding for larger screens
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         exit="exit"
         variants={containerVariants}
       >
-        <h2 className="md:text-3xl text-md font-bold text-emerald-800 mb-6">
+        <h2 className="text-md md:text-3xl lg:text-4xl xl:text-5xl font-bold text-emerald-800 mb-6">
           Empowering the Next Generation of Entrepreneurs
         </h2>
-        <p className="md:text-lg text-justify font-bold text-gray-700 text-sm mb-6">
+        <p className="text-sm md:text-lg lg:text-xl xl:text-2xl text-justify font-bold text-gray-700 mb-6">
           The BMI-CTY Academy Mentorship Program is more than guidance—it's a
           partnership built on growth, innovation, and shared aspirations.
         </p>
-        <div className="md:flex md:gap-10 mb-8">
+        <div className="flex flex-col md:flex-row md:gap-10 mb-8">
           {/* Card Section */}
           {[
             {
@@ -142,7 +150,7 @@ const Welcome = () => {
           ].map(({ img, title, desc }, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center mb-6 md:mb-0 border-2 border-emerald-800 rounded-md hover:scale-105 hover:shadow-lg transition-all duration-300 p-4"
+              className="flex flex-col items-center mb-6 md:mb-0 border-2 border-emerald-800 rounded-md hover:scale-105 hover:shadow-lg transition-all duration-300 p-4 lg:p-6 xl:p-8"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -164,12 +172,14 @@ const Welcome = () => {
               <img
                 src={img}
                 alt={title}
-                className="w-full object-cover md:h-80 rounded-lg shadow-lg mb-4"
+                className="w-full object-cover   h-64 sm:h-70 md:h-80  xl:h-96 rounded-lg shadow-lg mb-4"
               />
-              <h4 className="font-semibold text-lg text-emerald-800">
+              <h4 className="font-semibold text-lg lg:text-xl xl:text-2xl text-emerald-800">
                 {title}
               </h4>
-              <p className="text-gray-600 font-bold text-sm">{desc}</p>
+              <p className="text-gray-600 font-bold text-sm lg:text-base xl:text-lg">
+                {desc}
+              </p>
             </motion.div>
           ))}
         </div>

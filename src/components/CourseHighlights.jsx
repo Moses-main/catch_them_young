@@ -91,7 +91,7 @@ const CourseHighlights = () => {
               </div>
 
               {/* Content Section */}
-              <div className="w-full md:w-3/4 px-6 py-4 bg-gray-50 rounded-lg shadow-md">
+              <div className="w-full md:w-full px-6 py-4 bg-gray-50 rounded-lg shadow-md">
                 <h3 className="text-xl md:text-2xl font-semibold text-emerald-800 mb-4">
                   {course.title}
                 </h3>
