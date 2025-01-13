@@ -1,13 +1,14 @@
 const WhoWeAre = () => (
-  <section className="who-we-are flex flex-col min-h-screen mt-20 md:mt-0 bg-white shadow-lg rounded-lg">
-    <div className="image w-full h-1/2">
-      <img
-        className="w-full h-full object-cover rounded-t-lg"
-        src="/images/benefits_of_being_a_mentee.jpg"
-        alt="Business Network"
-      />
+  <section className="who-we-are flex flex-col min-h-screen mt-12 md:mt-0 bg-white shadow-lg rounded-lg">
+    {/*  Team Section */}
+    <div className="mt-8 bg-white shadow-lg rounded-lg p-6 lg:p-8 lg:w-full">
+      <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
+        <img src="" alt="BMI Group " />
+        {/* Placeholder for Map Embed */}
+        {/* <p className="text-gray-600">Map embed coming soon!</p> */}
+      </div>
     </div>
-    <div className="content w-full p-6">
+    <div className="content w-full p-2">
       <div className="w-[95%] md:w-[80%] mx-auto">
         <h2 className="md:text-3xl text-lg font-bold text-emerald-800 mb-4 mt-8">
           Who We Are
@@ -33,7 +34,7 @@ const WhoWeAre = () => (
           ins and outs of entrepreneurship, nothing and no one will stand in the
           way of your success.
         </p>
-        <p className="md:text-lg font-bold text-justify text-sm text-gray-700">
+        <p className="md:text-lg font-bold text-justify text-sm text-gray-700 mb-2">
           Every business person needs to learn the core entrepreneurial skills
           taught in these entrepreneurship courses from The Finishing School.
         </p>

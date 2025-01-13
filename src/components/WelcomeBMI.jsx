@@ -13,17 +13,17 @@ const WelcomeBMI = () => {
           exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 2 }}
         >
-          <h2 className="md:text-4xl text-lg font-bold mb-4 text-emerald-800">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-emerald-800">
             Our Mentorship Process
           </h2>
-          <h3 className="md:text-xl font-semibold text-emerald-800 mb-4">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-emerald-800 mb-4">
             At BMI-CTY Academy
           </h3>
-          <p className="text-gray-600 text-justify md:text-lg text-sm mb-6">
+          <p className="text-gray-600 text-justify text-base sm:text-lg md:text-xl mb-6">
             We believe in a structured yet flexible approach to mentorship.
             Here's how the process works:
           </p>
-          <ul className="text-gray-600 text-justify md:text-lg text-sm mb-6 list-disc list-inside">
+          <ul className="text-gray-600 text-justify text-base sm:text-lg md:text-xl mb-6 list-disc list-inside">
             <li>
               <strong>Sign Up:</strong> Submit your application to join the
               mentorship program.
